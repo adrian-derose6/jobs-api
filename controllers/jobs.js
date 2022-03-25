@@ -48,8 +48,6 @@ const updateJob = async (req, res) => {
 		{ new: true, runValidators: true }
 	);
 
-	console.log(job);
-
 	if (!job) {
 		throw new NotFoundError(`No job with id ${jobId}`);
 	}
